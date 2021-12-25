@@ -40,4 +40,4 @@ function pushLet() {
     funcs[8]()
     funcs[5]()
 }
-// pushLet()
+pushLet()
