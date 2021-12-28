@@ -20,7 +20,7 @@ function Pessoa() {
     setInterval(function() {
         self.idade++
         console.log(self.idade)
-    }/*.bind(this)*/, 200)
+    }/*.bind(this)*/, 1000)
 }
 
 new Pessoa
