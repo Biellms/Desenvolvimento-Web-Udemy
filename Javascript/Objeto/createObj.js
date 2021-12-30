@@ -1,15 +1,16 @@
 // Funções construtoras
 function Produto(nome, preco, desc) {
     this.nome = nome
+    this.preDesc = preco * (1 - desc)
     this.getPrecoComDesconto = () => {
-        return preco * (1 - desc)
+        return `R$${this.preDesc.toFixed(2)}`
     }
 }
 
 const p1 = new Produto('Caneta', 7.99, 0.15)
 const p2 = new Produto('Notebook', 2998.99, 0.25)
-console.log(p1.nome,p1.getPrecoComDesconto().toFixed(2),'\n'
-    +p2.nome,p2.getPrecoComDesconto().toFixed(2))
+console.log(p1.nome,p1.getPrecoComDesconto(),'\n'
+    +p2.nome,p2.getPrecoComDesconto())
 
 // Função Factory
 function criarFuncionario(nome, salarioBase, faltas) {
@@ -18,7 +19,7 @@ function criarFuncionario(nome, salarioBase, faltas) {
         salarioBase,
         faltas,
         getSalario() {
-            return (salarioBase / 30) * (30 - faltas)
+            return `R$${(salarioBase / 30) * (30 - faltas)}`
         }
     }
 }

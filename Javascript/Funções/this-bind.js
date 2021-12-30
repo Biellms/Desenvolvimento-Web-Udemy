@@ -1,17 +1,17 @@
-// const pessoa = {
-//     saudacao: 'Bom dia!',
-//     falar() {
-//         console.log(this.saudacao)
-//     }
-// }
+const pessoa = {
+    saudacao: 'Bom dia!',
+    falar() {
+        console.log(this.saudacao)
+    }
+}
 
-// pessoa.falar()
-// const falar = pessoa.falar
-// falar() // conflito entre paradigmas: funcional e OO
+pessoa.falar()
+const falar = pessoa.falar
+falar() // conflito entre paradigmas: funcional e OO
 
-// // utilização do bind
-// const falarDePessoa = pessoa.falar.bind(pessoa)
-// falarDePessoa()
+// utilização do bind
+const falarDePessoa = pessoa.falar.bind(pessoa)
+falarDePessoa()
 
 function Pessoa() {
     this.idade = 0
