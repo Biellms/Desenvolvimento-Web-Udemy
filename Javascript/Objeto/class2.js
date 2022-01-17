@@ -1,19 +1,20 @@
 class Avo {
-    constructor(sobrenome) {
-        this.sobrenome = sobrenome
+    constructor(sobreNomeVo = 'Mendes') {
+        this.sobreNomeVo = sobreNomeVo
     }
 }
 
 class Pai extends Avo {
-    constructor(sobrenome, profissao = 'Professor') {
-        super(sobrenome)
-        this.profissao = profissao
+    constructor(sobreNomeVo, sobreNomePai = 'Sousa') {
+        super(sobreNomeVo)
+        this.sobreNomePai = sobreNomePai
     }
 }
 
 class Filho extends Pai {
-    constructor() {
-        super('Silva')
+    constructor(sobreNomeVo, sobreNomePai, nome = 'Gabriel') {
+        super(sobreNomeVo, sobreNomePai)
+        this.nome = nome
     }
 }
 
