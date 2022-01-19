@@ -1,10 +1,10 @@
 const diaDaSemana = [
     'Domingo',
-    'Segunda',
-    'Terça',
-    'Quarta',
-    'Quinta',
-    'Sexta',
+    'Segunda-feira',
+    'Terça-feira',
+    'Quarta-feira',
+    'Quinta-feira',
+    'Sexta-feira',
     'Sábado',
 ];
 
@@ -35,7 +35,7 @@ console.log(data);
 console.log(data.toDateString());
 console.log(data.toUTCString());
 
-console.log(`Hoje é ${diaDaSemana[data.getDay()]} do mês ${mes[data.getMonth()]}`);
+console.log(`Hoje é ${diaDaSemana[data.getDay()]} - ${dataFormatada()}`);
 
 // data formatada
 function dataFormatada(data = new Date()) {
@@ -48,4 +48,4 @@ function dataFormatada(data = new Date()) {
 
     return dia+'/'+mes+'/'+ano
 }
-console.log('Data formatada '+dataFormatada());
+console.log('Data formatada - '+dataFormatada());
