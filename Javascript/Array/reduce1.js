@@ -11,4 +11,4 @@ const resultado = alunos.map(a => a.nota).reduce(function(acumulador, atual) {
     return acumulador + atual
 }, 0)
 
-console.log(resultado)
+console.log('Soma das Notas: '+resultado)
