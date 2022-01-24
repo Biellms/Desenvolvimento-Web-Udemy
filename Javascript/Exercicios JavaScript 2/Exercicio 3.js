@@ -1,16 +1,13 @@
-/*Escreva uma função que receba um valor booleano ou numérico. Se o parâmetro fornecido for booleano, o
-retorno da função deverá ser o inverso. Por exemplo, se a entrada for false, retornará true. Se o parâmetro for
-numérico, o retorno será o número inverso. Por exemplo, se for fornecido 1, o retorno será 1. Se o parâmetro de
-entrada não for de nenhum dos tipo acima, retorne "booleano ou número esperados, mas o parâmetro é do tipo
-..."*/
+/* Desenvolva uma função que recebe dois parâmetros, um é a quantidade de horas trabalhadas por um funcionário
+num mês, e o quanto ele recebe por hora. A função deverá calcular o salário líquido mensal do funcionário, que é
+da quantidade de horas trabalhadas no mês multiplicada pelo valor da sua hora. Desse valor, deve ser subtraído
+30%, relativo a impostos. */
 
-function inverso(valor) {
-    const tipo = typeof valor
+function salario(qtdHoras, ganhoPorHora) {
+    const salarioBruto = qtdHoras * ganhoPorHora
+    const salarioLiquido = salarioBruto - salarioBruto * 30/100
 
-    if (tipo == 'boolean') return `O inverso de ${valor} é ${!valor}`
-
-    if (tipo == 'number') return `O inverso de ${valor} é ${-valor}`
-
-    else return `Booleano ou número esperados, mas o parâmetro é do tipo ${tipo}`
+    return `Salário igual a R$${salarioLiquido}`
 }
-// console.log(inverso());
+
+console.log(salario(245, 60));
