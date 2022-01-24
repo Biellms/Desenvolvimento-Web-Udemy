@@ -6,7 +6,7 @@ function loopVar() {
     }
     console.log(i)
 }
-// LoopVar()
+loopVar()
 
 function loopLet() {
     for (let i = 0; i < 10; i++) {
@@ -40,4 +40,4 @@ function pushLet() {
     funcs[8]()
     funcs[5]()
 }
-pushLet()
+// pushLet()
