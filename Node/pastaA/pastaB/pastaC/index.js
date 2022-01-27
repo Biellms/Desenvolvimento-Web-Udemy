@@ -1,0 +1,1 @@
+this.ola2 = 'A regra eh clara...'
