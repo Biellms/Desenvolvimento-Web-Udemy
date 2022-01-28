@@ -1,1 +1,1 @@
-this.ola2 = 'A regra eh clara...'
+this.ola2 = 'A regra eh clara... Botou o olinho'
