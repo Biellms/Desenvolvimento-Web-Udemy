@@ -48,4 +48,4 @@ function dataFormatada(data = new Date()) {
 
     return dia+'/'+mes+'/'+ano
 }
-console.log('Data formatada - '+dataFormatada());
+console.log('Data totalmente formatada - '+dataFormatada());
