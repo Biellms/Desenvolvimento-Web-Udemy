@@ -1,7 +1,7 @@
 const moduloA = require('../../moduloA')
 console.log(moduloA.bemVindo);
 
-const c = require('./pastaC/index') // Não é necessário colocar o path 'index'
+const c = require('./pastaC/index') // Não é necessário colocar o path 'index', pois o index já é um valor padrão
 console.log(c.ola2)
 
 const http = require('http')
